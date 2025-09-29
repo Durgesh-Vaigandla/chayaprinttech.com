@@ -173,7 +173,7 @@ export const industrialProducts: ProductRecord[] = [
     slug: "warning-caution-labels",
     name: "Warning & Caution Labels",
     category: "Industrial",
-    short: "ANSI / ISO aligned safety communication markers.",
+    short: "ANSI compliant safety communication markers.",
     description:
       "High visibility hazard & instruction labels improving safety compliance across facilities and equipment fleets.",
     images: [

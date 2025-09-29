@@ -59,13 +59,13 @@ export default function About() {
                   <div className="text-blue-100 text-sm font-medium">Years</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="text-2xl font-bold text-[#F4A405]">500+</div>
+                  <div className="text-2xl font-bold text-[#F4A405]">200+</div>
                   <div className="text-blue-100 text-sm font-medium">
                     Clients
                   </div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
-                  <div className="text-2xl font-bold text-[#F4A405]">15+</div>
+                  <div className="text-2xl font-bold text-[#F4A405]">30+</div>
                   <div className="text-blue-100 text-sm font-medium">
                     Products
                   </div>
@@ -165,34 +165,38 @@ export default function About() {
               </p>
 
               <div className="grid grid-cols-2 gap-6 mt-8">
-                <div className="text-center p-6 bg-[#04499C] text-white rounded-2xl">
-                  <div className="text-4xl font-bold text-[#F4A405] mb-2">
-                    500+
+                <div className="text-center p-6 bg-white border-2 border-[#04499C] rounded-2xl">
+                  <div className="text-4xl font-bold text-[#04499C] mb-2">
+                    200+
                   </div>
-                  <div className="text-blue-100 font-medium">Happy Clients</div>
+                  <div className="text-gray-700 font-medium">Happy Clients</div>
                 </div>
-                <div className="text-center p-6 bg-[#F4A405] text-white rounded-2xl">
-                  <div className="text-4xl font-bold mb-2">15+</div>
-                  <div className="font-medium">Product Categories</div>
+                <div className="text-center p-6 bg-white border-2 border-[#F4A405] rounded-2xl">
+                  <div className="text-4xl font-bold text-[#F4A405] mb-2">
+                    8+
+                  </div>
+                  <div className="text-gray-700 font-medium">
+                    Product Categories
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-6">
-                <div className="h-48 bg-gradient-to-br from-[#04499C] to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Building2 className="w-16 h-16 text-white" />
+                <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-[#04499C] rounded-2xl flex items-center justify-center shadow-lg">
+                  <Building2 className="w-16 h-16 text-[#04499C]" />
                 </div>
-                <div className="h-32 bg-gradient-to-br from-[#F4A405] to-yellow-500 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Zap className="w-12 h-12 text-white" />
+                <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-[#F4A405] rounded-2xl flex items-center justify-center shadow-lg">
+                  <Zap className="w-12 h-12 text-[#F4A405]" />
                 </div>
               </div>
               <div className="space-y-6 mt-8">
-                <div className="h-32 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Target className="w-12 h-12 text-white" />
+                <div className="h-32 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-gray-400 rounded-2xl flex items-center justify-center shadow-lg">
+                  <Target className="w-12 h-12 text-gray-600" />
                 </div>
-                <div className="h-48 bg-gradient-to-br from-[#F4A405] to-orange-500 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Star className="w-16 h-16 text-white" />
+                <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-[#F4A405] rounded-2xl flex items-center justify-center shadow-lg">
+                  <Star className="w-16 h-16 text-[#F4A405]" />
                 </div>
               </div>
             </div>

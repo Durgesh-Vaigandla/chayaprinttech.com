@@ -104,26 +104,48 @@ export default function ProductsPage() {
             </p>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-5xl mx-auto">
-              <div className="bg-[#04499C] text-white p-6 rounded-xl text-center">
-                <div className="text-4xl font-bold text-[#F4A405] mb-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-5xl mx-auto">
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-[#04499C] text-center">
+                <div className="w-12 h-12 bg-[#04499C] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Star className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-[#04499C] mb-2">
                   {industrialProducts.length + commercialProducts.length}+
                 </div>
-                <div className="text-sm font-medium">Product Categories</div>
-              </div>
-              <div className="bg-[#F4A405] text-white p-6 rounded-xl text-center">
-                <div className="text-4xl font-bold mb-2">500+</div>
-                <div className="text-sm font-medium">Custom Solutions</div>
-              </div>
-              <div className="bg-[#04499C] text-white p-6 rounded-xl text-center">
-                <div className="text-4xl font-bold text-[#F4A405] mb-2">
-                  15+
+                <div className="text-sm font-medium text-gray-600">
+                  Product Categories
                 </div>
-                <div className="text-sm font-medium">Years Experience</div>
               </div>
-              <div className="bg-[#F4A405] text-white p-6 rounded-xl text-center">
-                <div className="text-4xl font-bold mb-2">99.9%</div>
-                <div className="text-sm font-medium">Quality Assurance</div>
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-[#F4A405] text-center">
+                <div className="w-12 h-12 bg-[#F4A405] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-[#F4A405] mb-2">
+                  200+
+                </div>
+                <div className="text-sm font-medium text-gray-600">
+                  Custom Solutions
+                </div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-[#04499C] text-center">
+                <div className="w-12 h-12 bg-[#04499C] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-[#04499C] mb-2">8+</div>
+                <div className="text-sm font-medium text-gray-600">
+                  Years Experience
+                </div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-[#F4A405] text-center">
+                <div className="w-12 h-12 bg-[#F4A405] rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-4xl font-bold text-[#F4A405] mb-2">
+                  99.9%
+                </div>
+                <div className="text-sm font-medium text-gray-600">
+                  Quality Assurance
+                </div>
               </div>
             </div>
           </div>
@@ -172,7 +194,7 @@ export default function ProductsPage() {
                   Expert Engineering
                 </h3>
                 <p className="text-gray-600">
-                  15+ years of custom solution development with proven industry
+                  8+ years of custom solution development with proven industry
                   expertise
                 </p>
               </div>
@@ -225,9 +247,9 @@ export default function ProductsPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-gray-200">
             <div className="text-center">
               <div className="text-2xl font-bold text-[#04499C] mb-1">
-                ISO 9001:2015
+                Quality Assured
               </div>
-              <div className="text-sm text-gray-600">Quality Certified</div>
+              <div className="text-sm text-gray-600">Certified Processes</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-[#F4A405] mb-1">
@@ -243,7 +265,7 @@ export default function ProductsPage() {
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-[#F4A405] mb-1">
-                15+ Years
+                8+ Years
               </div>
               <div className="text-sm text-gray-600">Industry Experience</div>
             </div>

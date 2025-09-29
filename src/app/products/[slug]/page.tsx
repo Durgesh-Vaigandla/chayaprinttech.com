@@ -213,7 +213,9 @@ export default function ProductDetail({ params }: Props) {
               <ul className="space-y-3">
                 <li className="flex gap-3 items-center">
                   <Award className="w-5 h-5 text-[#F4A405]" />
-                  <span className="text-gray-700">ISO 9001:2015 Certified</span>
+                  <span className="text-gray-700">
+                    Quality Assurance Certified
+                  </span>
                 </li>
                 <li className="flex gap-3 items-center">
                   <Award className="w-5 h-5 text-[#F4A405]" />

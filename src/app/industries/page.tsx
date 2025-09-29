@@ -278,9 +278,7 @@ export default function Industries() {
               <div className="text-blue-100 font-medium">Industries</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="text-4xl font-bold text-[#F4A405] mb-2">
-                1000+
-              </div>
+              <div className="text-4xl font-bold text-[#F4A405] mb-2">200+</div>
               <div className="text-blue-100 font-medium">Clients</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
@@ -504,9 +502,7 @@ export default function Industries() {
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-[#F4A405]" />
               </div>
-              <div className="text-4xl font-bold text-[#F4A405] mb-2">
-                1000+
-              </div>
+              <div className="text-4xl font-bold text-[#F4A405] mb-2">200+</div>
               <div className="text-blue-100 font-medium">Clients Worldwide</div>
               <div className="text-sm text-blue-200 mt-2">Trusted Partners</div>
             </div>
@@ -520,7 +516,7 @@ export default function Industries() {
               <div className="text-blue-100 font-medium">
                 Quality Compliance
               </div>
-              <div className="text-sm text-blue-200 mt-2">ISO 9001:2015</div>
+              <div className="text-sm text-blue-200 mt-2">Industry Leader</div>
             </div>
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -584,7 +580,7 @@ export default function Industries() {
                 Industry Expertise
               </h3>
               <p className="text-gray-600">
-                15+ years of specialized experience across all sectors
+                Industry Leader since 2017 across all sectors
               </p>
             </div>
             <div className="text-center">

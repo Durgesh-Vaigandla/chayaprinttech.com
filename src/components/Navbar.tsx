@@ -114,7 +114,7 @@ const Navbar = () => {
               className="relative"
             >
               <button className="text-gray-700 hover:text-[#04499C] font-medium flex items-center gap-1 text-base group">
-                <span>Products</span>
+                <span className="font-semibold">Products</span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-300 ${
                     isProductsOpen ? "rotate-180 text-[#04499C]" : ""
@@ -130,44 +130,49 @@ const Navbar = () => {
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    className="absolute top-full left-1/2 -translate-x-1/2 w-[500px] bg-white shadow-2xl rounded-xl border border-gray-100 p-6 mt-4"
+                    className="absolute top-full left-1/2 -translate-x-1/2 w-[400px] bg-white shadow-2xl rounded-xl border border-gray-100 p-6 mt-4"
                   >
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="space-y-4">
                       {productCategories.map((category, index) => {
                         const Icon = category.icon;
                         return (
-                          <div key={index}>
-                            <div className="flex items-center gap-3 mb-3">
-                              <div className="w-10 h-10 bg-[#04499C]/10 rounded-lg flex items-center justify-center">
-                                <Icon className="w-6 h-6 text-[#04499C]" />
+                          <div
+                            key={index}
+                            className="border-b border-gray-100 last:border-b-0 pb-4 last:pb-0"
+                          >
+                            <Link
+                              href={`/products?category=${category.title
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")}`}
+                              className="flex items-center gap-3 mb-3 group hover:bg-gray-50 p-2 rounded-lg transition-all duration-200"
+                            >
+                              <div className="w-10 h-10 bg-[#04499C] rounded-lg flex items-center justify-center">
+                                <Icon className="w-6 h-6 text-white" />
                               </div>
-                              <div>
-                                <h3 className="font-semibold text-gray-900">
+                              <div className="flex-1">
+                                <h3 className="font-semibold text-gray-900 group-hover:text-[#04499C]">
                                   {category.title}
                                 </h3>
                                 <p className="text-xs text-gray-500">
                                   {category.description}
                                 </p>
                               </div>
-                            </div>
-                            <div className="space-y-1">
-                              {category.products.map((product, idx) => (
-                                <Link
-                                  key={idx}
-                                  href={`/products/${product
-                                    .toLowerCase()
-                                    .replace(/\s+/g, "-")
-                                    .replace(/[()]/g, "")}`}
-                                  className="group flex items-center justify-between text-sm text-gray-600 hover:text-[#04499C] hover:bg-gray-50 px-3 py-1.5 rounded-md transition-colors duration-200"
-                                >
-                                  <span>{product}</span>
-                                  <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                                </Link>
-                              ))}
-                            </div>
+                              <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#04499C]" />
+                            </Link>
                           </div>
                         );
                       })}
+
+                      {/* View All Products Link */}
+                      <div className="pt-2 border-t border-gray-100">
+                        <Link
+                          href="/products"
+                          className="flex items-center justify-center gap-2 text-[#04499C] hover:text-[#F4A405] font-semibold py-2 px-4 bg-[#04499C]/5 hover:bg-[#F4A405]/10 rounded-lg transition-all duration-200"
+                        >
+                          View All Products
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </div>
                     </div>
                   </motion.div>
                 )}
@@ -197,7 +202,7 @@ const Navbar = () => {
             >
               <Link
                 href="/contact"
-                className="bg-gradient-to-r from-[#04499C] to-[#F4A405] text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+                className="bg-[#04499C] text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 hover:bg-[#F4A405]"
               >
                 Contact Us
               </Link>
@@ -209,7 +214,11 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 rounded-md text-gray-700 hover:text-[#04499C]"
           >
-            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+            {isMobileMenuOpen ? (
+              <X className="w-7 h-7" />
+            ) : (
+              <Menu className="w-7 h-7" />
+            )}
           </button>
         </div>
       </div>
@@ -231,11 +240,41 @@ const Navbar = () => {
               </button>
             </div>
             <div className="flex flex-col space-y-4 p-6">
-              <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#F4A405]">Home</Link>
-              <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#F4A405]">About</Link>
-              <Link href="/products" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#F4A405]">Products</Link>
-              <Link href="/industries" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#F4A405]">Industries</Link>
-              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="bg-gradient-to-r from-[#04499C] to-[#F4A405] text-white px-5 py-3 rounded-full text-center font-medium">Contact Us</Link>
+              <Link
+                href="/"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="hover:text-[#F4A405]"
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="hover:text-[#F4A405]"
+              >
+                About
+              </Link>
+              <Link
+                href="/products"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="hover:text-[#F4A405]"
+              >
+                Products
+              </Link>
+              <Link
+                href="/industries"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="hover:text-[#F4A405]"
+              >
+                Industries
+              </Link>
+              <Link
+                href="/contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="bg-[#04499C] text-white px-5 py-3 rounded-full text-center font-medium hover:bg-[#F4A405] transition-colors duration-300"
+              >
+                Contact Us
+              </Link>
             </div>
           </motion.div>
         )}

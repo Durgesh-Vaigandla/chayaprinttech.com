@@ -62,13 +62,13 @@ export default function Home() {
 
   const trustIndicators = [
     {
-      metric: "15+",
+      metric: "8+",
       label: "Years Serving Industry Leaders",
       icon: Award,
-      description: "Established 2008",
+      description: "Established 2017",
     },
     {
-      metric: "10,000+",
+      metric: "1000+",
       label: "Satisfied Business Clients",
       icon: Users,
       description: "Fortune 500 to SMBs",
@@ -114,7 +114,7 @@ export default function Home() {
       icon: TrendingUp,
       title: "Quality Management System",
       description:
-        "ISO 9001:2015 certified processes with full traceability, documentation, and continuous improvement protocols.",
+        "Rigorous quality processes with full traceability, documentation, and continuous improvement protocols.",
       businessValue:
         "Ensures consistent quality and supports your quality initiatives",
     },
@@ -188,11 +188,11 @@ export default function Home() {
             <div className="flex items-center space-x-6">
               <span className="flex items-center">
                 <Shield className="w-4 h-4 mr-2" />
-                ISO 9001:2015 Certified
+                Quality Assured
               </span>
               <span className="flex items-center">
                 <Award className="w-4 h-4 mr-2" />
-                Industry Leader Since 2008
+                Industry Leader Since 2017
               </span>
             </div>
             <div className="flex items-center space-x-4 mt-2 lg:mt-0">
@@ -281,25 +281,26 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="relative"
                   >
-                    {/* Product Showcase Grid */}
-                    <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+                    {/* Product Showcase Grid - 6 Images: 4 Industrial, 2 Commercial */}
+                    <div className="grid grid-cols-2 gap-3 max-w-md mx-auto">
+                      {/* Industrial Products (4) */}
                       <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="relative h-32 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
+                        className="relative h-28 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
                       >
                         <Image
-                          src="/Commercial/stickers.jpg"
-                          alt="Stickers and Labels"
+                          src="/industrial/Polycarbonate Labels (PC Stickers)/polycarbonate-labels-pc-stickers-1.jpg"
+                          alt="Polycarbonate Labels"
                           width={200}
-                          height={128}
+                          height={112}
                           className="w-full h-full object-cover"
                           unoptimized
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                        <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">
-                          Stickers
+                        <div className="absolute bottom-1 left-2 text-white text-xs font-semibold">
+                          PC Labels
                         </div>
                       </motion.div>
 
@@ -307,19 +308,19 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="relative h-32 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
+                        className="relative h-28 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
                       >
                         <Image
-                          src="/Commercial/business_cards.jpg"
-                          alt="Business Cards"
+                          src="/industrial/High Temperature Labels/high-temperature-labels-1.jpg"
+                          alt="High Temperature Labels"
                           width={200}
-                          height={128}
+                          height={112}
                           className="w-full h-full object-cover"
                           unoptimized
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                        <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">
-                          Business Cards
+                        <div className="absolute bottom-1 left-2 text-white text-xs font-semibold">
+                          High Temp
                         </div>
                       </motion.div>
 
@@ -327,19 +328,19 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.5 }}
-                        className="relative h-32 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
+                        className="relative h-28 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
                       >
                         <Image
-                          src="/Commercial/banners.jpg"
-                          alt="Banners"
+                          src="/industrial/ESD Labels/esd-labels-isd-1.jpg"
+                          alt="ESD Labels"
                           width={200}
-                          height={128}
+                          height={112}
                           className="w-full h-full object-cover"
                           unoptimized
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                        <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">
-                          Banners
+                        <div className="absolute bottom-1 left-2 text-white text-xs font-semibold">
+                          ESD Labels
                         </div>
                       </motion.div>
 
@@ -347,19 +348,60 @@ export default function Home() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, delay: 0.6 }}
-                        className="relative h-32 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
+                        className="relative h-28 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
                       >
                         <Image
-                          src="/Commercial/brochures_big.jpg"
-                          alt="Brochures"
+                          src="/industrial/Automotive Labels/automotive-labels-1.jpg"
+                          alt="Automotive Labels"
                           width={200}
-                          height={128}
+                          height={112}
                           className="w-full h-full object-cover"
                           unoptimized
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                        <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">
-                          Brochures
+                        <div className="absolute bottom-1 left-2 text-white text-xs font-semibold">
+                          Automotive
+                        </div>
+                      </motion.div>
+
+                      {/* Commercial Products (2) */}
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0.7 }}
+                        className="relative h-28 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
+                      >
+                        <Image
+                          src="/Commercial/business_cards.jpg"
+                          alt="Business Cards"
+                          width={200}
+                          height={112}
+                          className="w-full h-full object-cover"
+                          unoptimized
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        <div className="absolute bottom-1 left-2 text-white text-xs font-semibold">
+                          Business Cards
+                        </div>
+                      </motion.div>
+
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, delay: 0.8 }}
+                        className="relative h-28 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#04499C]"
+                      >
+                        <Image
+                          src="/Commercial/stickers.jpg"
+                          alt="Stickers and Labels"
+                          width={200}
+                          height={112}
+                          className="w-full h-full object-cover"
+                          unoptimized
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        <div className="absolute bottom-1 left-2 text-white text-xs font-semibold">
+                          Stickers
                         </div>
                       </motion.div>
                     </div>
